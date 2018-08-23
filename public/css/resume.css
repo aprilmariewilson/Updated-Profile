@@ -1,0 +1,281 @@
+.card-wrap  {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	z-index: 11;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+}
+
+.card-wrap :before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+	border-radius: 0 0 4px 0;
+	-moz-border-radius: 0 0 4px 0;
+	-webkit-border-radius: 0 0 4px 0;
+	-khtml-border-radius: 0 0 4px 0;
+}
+
+.card-wrap :after {
+	content: '';
+	position: relative;
+	left: -15px;
+	top: -15px;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+}
+
+.cardwrap{
+    background-color:#333;
+}
+
+.resume-title .icon,
+.skill-title .icon {
+	background: transparent;
+}
+
+.resume-title .name,
+.skill-title .name {
+	color: rgba(255, 255, 255, 0.85);
+}
+.info-list ul li {
+	display: inline-block;
+	width: 48%;
+    line-height: 1.6;
+    padding: 0;
+    color:gainsboro;    
+}
+.resume-items .resume-item .name {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.skills-list ul li .name {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.skills-list ul li .progress {
+	background: #3e4148;
+}
+
+.resume-title,
+.skill-title {
+	padding: 0 0 20px 0;
+	position: relative;
+}
+
+.resume-title:after,
+.skill-title:after {
+	left: 20px;
+}
+
+  .content .title:before {
+	content: '';
+	position: absolute;
+	left: 12px;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	background: -moz-linear-gradient(-45deg, #2eca7f, 0.4, 0%, #2eca7f, 0.01 100%);
+	background: -webkit-linear-gradient(-45deg, #2eca7f, 0.4, 0%, #2eca7f, 0.01 100%);
+	background: linear-gradient(135deg, #2eca7f, 0.4, 0%, #2eca7f, 0.01 100%);
+	z-index: -1;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-khtml-border-radius: 30px;
+}
+.content .title:after {
+	content: '';
+	position: absolute;
+	left: -60px;
+	bottom: -15px;
+	width: 95%;
+	height: 1px;
+	background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.resume-title .icon,
+.skill-title .icon {
+	position: relative;
+	top: -15px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	font-size: 32px;
+	color: #2eca7f;
+	background: #ffffff;
+}
+
+.resume-title .icon .ion,
+.skill-title .icon .ion,
+.resume-title .icon .fab,
+.skill-title .icon .fab,
+.resume-title .icon .fas,
+.skill-title .icon .fas {
+	display: block;
+	line-height: 40px;
+}
+
+.resume-title .name,
+.skill-title .name {
+	margin: 0 0 0 40px;
+	font-size: 13px;
+	line-height: 13px;
+	color: gainsboro;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+#icon-resume{
+	height: 20px;
+
+}
+.res-icon{
+	transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+	background: -moz-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+}
+/* 5.1 Resume */
+.resume-items .resume-item {
+	position: relative;
+	padding: 20px 0 20px 0;
+}
+
+.resume-items .resume-item:after {
+	left: 4px;
+}
+
+.resume-items .resume-item.active .date {
+	color: #2eca7f;
+}
+
+.resume-items .resume-item.active .date:before {
+	background: #2eca7f;
+}
+
+.resume-items .resume-item .date {
+	margin: 0 0 10px 0;
+	padding: 0;
+	position: relative;
+	display: inline-block;
+	font-size: 11px;
+	line-height: 18px;
+	color: #d8dbe2;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+}
+
+.resume-items .resume-item .date:before {
+	content: '';
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	width: 9px;
+	height: 9px;
+	background: #d8dbe2;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+.name{
+padding-left: 10px;
+	color:#2eca7f;
+}
+ .company{
+	padding-left: 20px;
+	color:#626262;
+}
+.date{
+	padding-left: 20px;
+	color: #626262;
+}
+h2{
+	color:#2eca7f;	
+}
+p{
+	padding-left: 20px;
+	color: gainsboro;
+}
+.resume-items .resume-item .name {
+	margin: 0;
+	font-size: 13px;
+	color: gainsboro;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.resume-items .resume-item .company {
+	margin: 10px 0 10px 0;
+	font-size: 11px;
+	color: #999999;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.resume-items .resume-item p {
+	margin: 0;
+	padding-left: 10px;
+	color: gainsboro;
+}
+
+
+.skills-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.skills-list ul li {
+	position: relative;
+	padding: 20px 0;
+	left: 4px;
+}
+
+.skills-list ul li .name {
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	line-height: 14px;
+	color: #626262;
+}
+
+.skills-list ul li .progress {
+	position: relative;
+	display: block;
+	width: 90%;
+	height: 4px;
+	background: #d8dbe2;
+}
+
+.skills-list ul li .progress .percentage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 100%;
+	background: #2eca7f;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}

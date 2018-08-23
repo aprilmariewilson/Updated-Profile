@@ -1,0 +1,85 @@
+.card-wrap  {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	z-index: 11;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	margin-top: 5%;
+}
+
+.card-wrap :before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 0 4px 0;
+	-moz-border-radius: 0 0 4px 0;
+	-webkit-border-radius: 0 0 4px 0;
+	-khtml-border-radius: 0 0 4px 0;
+	margin-top: 5%;
+}
+
+.card-wrap :after {
+	content: '';
+	position: relative;
+	left: -15px;
+	top: -15px;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	margin-top: 5%;
+	background-color:#333;
+}
+
+form{
+    margin: 5%;
+}
+
+.info-list ul li strong {
+	display: inline-block;
+	font-size: 13px;
+	color: gainsboro;
+	font-weight: 300;
+	padding: 0;
+	width: 100%;
+	margin-top: 2%;
+}
+#info{
+	padding:0;
+}
+.title{
+    color: gainsboro;
+}
+.col {
+    background-color:#333;
+}
+.btn{
+    background-color:#333;
+    color: gainsboro;
+    border: 1px solid gainsboro;
+}
+.btn:hover{
+    background-color: gainsboro;
+}
+.btn:active, btn:visited{
+	text-decoration: none;
+}
+.form-control{
+    background-color: #333;
+    border: none;
+    border-bottom: 1px solid #626262;
+}
+.map {
+    margin-bottom: 2%;
+}
+.far {
+    color: gainsboro;
+}

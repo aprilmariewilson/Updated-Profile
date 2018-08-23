@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+    <link rel="shortcut icon" href="./images/icons/alt-aw.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://cdn.rawgit.com/desandro/masonry/master/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.rawgit.com/digistate/resouces/master/multipleFilterMasonry.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/works.css">
+
+
+</head>
+
+<body>
+    <div class="card-inner" id="resume-card">
+        <div class="card-wrap">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 ">
+                    <!-- Filtering buttons -->
+                    <div class="button-area filters">
+                        <label class="button">
+                            <input type="checkbox" value="group1" />JS/jQuery
+                        </label>
+                        <label class="button">
+                            <input type="checkbox" value="group2" />Node.JS
+                        </label>
+                        <label class="button">
+                            <input type="checkbox" value="group3" />MongoDB/ MySQL
+                        </label>
+                        <label class="button">
+                            <input type="checkbox" value="group4" />React
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-12 ">
+                    <!-- Masonry contents -->
+                    <div id="mnsry_container">
+                        <article class="item group1">
+                            <h1>Train Schedule</h1>
+                            <img src="./images/projects/train.jpg" />
+                        </article>
+                        <article class="item group1">
+                            <h1>Game of Thrones Trivia</h1>
+                            <img src="./images/projects/game-of-thrones.png" />
+                        </article>
+                        <article class="item group1">
+                            <h1>Hangman</h1>
+                            <img src="./images/projects/hangman.jpg" />
+                        </article>
+                        <article class="item group1">
+                            <h1>Crystal Collectors</h1>
+                            <img src="./images/projects/crystal.png" />
+                        </article>
+                        <article class="item group4">
+                            <h1>Memory Game</h1>
+                            <img src="./images/projects/memory.png" />
+                        </article>
+                        <article class="item group2">
+                            <h1>Friend Finder</h1>
+                            <img src="./images/projects/pet-finder.png" />
+                        </article>
+                        <article class="item group2">
+                            <h1>Liri App</h1>
+                            <img src="./images/projects/Twitter.jpg" />
+                        </article>
+                        <article class="item group1">
+                            <h1>Celebrity Gifs</h1>
+                            <img src="./images/projects/gif.png" />
+                        </article>
+                        <article class="item group3">
+                            <h1>Food Truck</h1>
+                            <img src="./images/projects/food.jpg" />
+                        </article>
+                        <article class="item group3 group2">
+                            <h1>Bamazon</h1>
+                            <img src="https://unsplash.it/700/410?random" />
+                        </article>
+                        <article class="item group4">
+                            <h1>Indecision App</h1>
+                            <img src="https://unsplash.it/760/440?random" />
+                        </article>
+                        <article class="item group4">
+                            <h1>SIM</h1>
+                            <img src="./images/projects/SIM.png" />
+                        </article>
+                    </div>
+                </div>
+                <div id="loading_msg">Loading...</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="./js/multipleFilterMasonry.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

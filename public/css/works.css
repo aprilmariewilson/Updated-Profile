@@ -46,6 +46,7 @@ body a:hover {
 #mnsry_container article {
   width: 50%;
   cursor: pointer;
+  overflow:hidden;
   opacity: 0;
 }
 #mnsry_container article h1 {
@@ -80,7 +81,7 @@ body a:hover {
 
 @media (max-width: 860px) {
   #mnsry_container article {
-    width: 48%;
+    width: 50%;
     min-height: 150px;
   }
 }

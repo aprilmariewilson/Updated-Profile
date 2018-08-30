@@ -1,11 +1,15 @@
 
+const dotenv = require('dotenv')
 const express = require('express');
 const bodyParser = require('body-parser');
-const methodOverride = require('method-override');
 const routes = require('./routes/index');
 const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 8000;
+
+dotenv.config()
+
+
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -23,3 +27,11 @@ app.use('/', routes);
 app.listen(PORT, () => {
 	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+const result = dotenv.config()
+ 
+if (result.error) {
+  throw result.error
+}
+ 
+console.log(result.parsed)

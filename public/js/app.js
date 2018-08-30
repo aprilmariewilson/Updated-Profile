@@ -33,19 +33,21 @@ function showDiv() {
 };
 $("#submit").on ("click",function(event){
 event.preventDefault();
-// alert('you hit the button!');
+
 //create new user
 var userData = {
             "name": $("#exampleInputName").val().trim(),
             "email": $("#exampleInputEmail1").val().trim(),
-            "number": $("#exampleInputPhoneNumber1").val().trim(),
+            "phoneNumber": $("#exampleInputPhoneNumber1").val().trim(),
             "message": $("#exampleTextarea").val().trim(),
         };
         $.post("/api/users", userData)
                 .then(function (results) {
                     console.log(results);
-                    $(".form-control").empty();
-                   $("#myModal").show();
+                    $(".form-control").val('');
+                    $('#myModal').modal({
+                        keyboard: false
+                      })
                 });
        
 });
@@ -71,37 +73,6 @@ $("document").ready(function () {
             .parent()
             .toggleClass("active");
     });
-
-
- //contacts page submit message functionality
-// $('form').on("click", function(e){
-// e.preventDefault();
-// $("#submit").on("click", function (e) {
-//         e.preventDefault();
-//         console.log ($("#exampleInputName").val());
-    
-// });
-// });
-
-
-    // 
-
-    //     //create new user
-    //     var userData = {
-    //         "name": $("#exampleInputName").val().trim(),
-    //         "email": $("#exampleInputEmail1").val().trim(),
-    //         "number": $("#exampleInputPhoneNumber1").val().trim(),
-    //         "message": $("#exampleTextarea").val().trim(),
-    //     };
-    //     // get
-    //     $.post("/api/users", newUser)
-    //         .then(function (results) {
-    //             console.log(results);
-    //             $(".form-control").empty();
-    //            $("#myModal").modal();
-    //         });
-    //     // end of the function for clicking on submit button
-    // });
 
 
 }); //page load

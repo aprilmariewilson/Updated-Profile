@@ -31,28 +31,30 @@ function showDiv() {
             aside.load("http://localhost:8000/contact");
     }
 };
-$("#submit").on ("click",function(event){
-event.preventDefault();
 
-//create new user
-var userData = {
+
+$("document").ready(function () {
+    // contact page js
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        //create new user
+        var userData = {
             "name": $("#exampleInputName").val().trim(),
             "email": $("#exampleInputEmail1").val().trim(),
             "phoneNumber": $("#exampleInputPhoneNumber1").val().trim(),
             "message": $("#exampleTextarea").val().trim(),
         };
         $.post("/api/users", userData)
-                .then(function (results) {
-                    console.log(results);
-                    $(".form-control").val('');
-                    $('#myModal').modal({
-                        keyboard: false
-                      })
-                });
-       
-});
+            .then(function () {
+                $(".form-control").val('');
+                event.preventDefault();
+                jQuery.noConflict();
+                $('#myModal').modal('show');
+            });
 
-$("document").ready(function () {
+    });
 
     // works page animation
 

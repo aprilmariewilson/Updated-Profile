@@ -81,6 +81,7 @@ h2, h3{
 	background: -moz-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(9, 192, 52, 0.4) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
 	background: linear-gradient(135deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%); 
+	border: none;
 }
 .form-control{
     background-color: #333;

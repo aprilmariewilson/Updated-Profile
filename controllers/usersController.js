@@ -18,13 +18,6 @@ const transporter = nodemailer.createTransport({
 	}
 });
 
-const mailOptions = {
-	from: process.env.DB_USER,
-	to: process.env.DB_EMAIL,
-	subject: 'Portfolio hit ',
-	text: 'Someone is contacting you through your portfolio!'
-};
-
 
 module.exports = {
 	findAll: function (req, res) {
@@ -41,7 +34,14 @@ module.exports = {
 			.catch(err => res.status(422).json(err));
 	},
 	create: function (req, res) {
-		console.log("controller ", req.body)
+		
+		const mailOptions = {
+			from: process.env.DB_USER,
+			to: process.env.DB_EMAIL,
+			subject: 'Portfolio hit ',
+			text: 'Someone is contacting you through your portfolio! Name:' + req.body.name + 
+			' Email: ' + req.body.email + ' Number: ' + req.body.phoneNumber + ' ' + req.body.message
+		};
 		db.User
 			.create(req.body)
 			.then((dbModel, err) => {
@@ -53,7 +53,7 @@ module.exports = {
 				if (error) {
 					console.log(error);
 				} else {
-					console.log('Email sent: ' + info.response);
+					console.log('Email sent');
 				}
 			}))
 			.catch(err => res.status(422).json(err));

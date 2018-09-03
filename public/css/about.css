@@ -1,0 +1,31 @@
+p {
+    color: gainsboro;
+    font-family: 'Merienda', cursive;
+}
+#badge{
+    
+height: 60px;
+margin-left: 2%;
+}
+h5{
+    color: rgba(9, 192, 52);
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+h3{
+    color: #626262;
+    margin-left: 3%;
+
+}
+.about-title{
+padding: 2%;
+margin-bottom: 2%;
+background-image: -moz-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(9, 192, 52, 0.4) 100%);
+ background-image: -webkit-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+ background-image: linear-gradient(135deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%); 	
+}
+.work{
+    margin-top: 3%;
+
+}

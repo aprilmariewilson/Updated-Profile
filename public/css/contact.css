@@ -1,7 +1,7 @@
 .card-wrap  {
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: 650px;
 	z-index: 11;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -75,6 +75,8 @@ h2, h3{
 	border: -webkit-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
 	border: linear-gradient(135deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
 	float: right;
+	height: 50px;
+	width: 100px;
 	margin: 5%;
 }
 .btn:hover{
@@ -92,7 +94,8 @@ h2, h3{
 .form-control{
     background-color: #333;
     border: none;
-    border-bottom: 1px solid #626262;
+	border-bottom: 1px solid #626262;
+	box-shadow: rgba(0, 0, 0, 0.05);
 }
 .form-control:active, .form-control:focus{
 	box-shadow: rgba(9, 192, 52);

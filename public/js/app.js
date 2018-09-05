@@ -38,9 +38,18 @@ $("document").ready(function () {
 
     // scroll bar
     var width = $(window).width();	
+
     if(width > 1024) {
         $('.card-inner .card-wrap').slimScroll({
-            height: '625px'
+            height: '625px', 
+            color: 'rgb(94, 246, 130)',
+            distance: '2px',
+            railVisible: true,
+            railColor: '#626262',
+            railOpacity: 0.3,
+            wheelStep: 10,
+            allowPageScroll: false,
+            disableFadeOut: false     
         });
     };
     if((width < 1024) & $('#home-card').length) { 
@@ -55,8 +64,8 @@ $("document").ready(function () {
 				}
 			});
 		});
-	}
-
+    }
+   
     // contact page js
 
     $("#submit").on("click", function (event) {
@@ -89,8 +98,6 @@ $("document").ready(function () {
         },
         1200
     );
-
-    loadingMessage.fadeOut();
     // Change the filtering button(label) status
     filterButton.find("input").change(function () {
 

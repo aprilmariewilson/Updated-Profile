@@ -11,13 +11,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
         crossorigin="anonymous">
-        <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.js"></script>
     <script src="https://cdn.rawgit.com/desandro/masonry/master/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdn.rawgit.com/digistate/resouces/master/multipleFilterMasonry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -36,12 +34,44 @@
 </head>
 
 <body>
+    <nav class="hidden-lg menu-container ">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class=".hidden-lg menu-card">
+                        <button onclick="showDiv()" scope="col" class="menu" id="about">
+                            <span id="about">
+                                <img src="./images/icons/earlybirds-brands.svg" class="icon" sizes="height: 60px" srcset="">
+                                <span class="link" id="about">About</span>
+                            </span>
+                        </button>
+                        <button onclick="showDiv()" scope="col" class="menu" id="resume">
+                            <span id="resume">
+                                <img src="./images/icons/file-alt-regular.svg" class="icon" sizes="height: 60px" srcset="">
+                                <span class="link" id="resume">Resume</span>
+                            </span>
+                        </button>
+                        <button onclick="showDiv()" scope="col" class="menu" id="works">
+                            <span id="works">
+                                <img src="./images/icons/connectdevelop-brands.svg" class="icon" sizes="height: 60px" srcset="">
+                                <span class="link" id="works">Works</span>
+                            </span>
+                        </button>
+                        <button onclick="showDiv()" scope="col" class="menu" id="contact">
+                            <span id="contact">
+                                <img src="./images/icons/at-solid.svg" class="icon" sizes="" srcset="">
+                                <span class="link" id="contact">Contact</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="app">
         <div class="background">
             <div class="row">
-
                 <div class="col-xs-12 col-md-10 col-lg-6">
-
                     <div class="home card-inner" id="home-card">
                         <!-- <div class="cardWrap"> -->
                         <div class="profile">
@@ -70,16 +100,16 @@
                 </div>
                 <div class="col-xs-12 col-md-10 col-lg-6">
                     <div class="aside">
-                       
+
                     </div>
                 </div>
             </div>
             <!--background-->
-            <footer class="menu-container">
+            <footer class="visible-lg menu-container ">
                 <div class="row justify-content-center">
                     <div class="row">
                         <div class="col-xs-12 col-md-12 col-lg-12">
-                            <div class="menu-card">
+                            <div class=".visible-lg-* menu-card">
                                 <button onclick="showDiv()" scope="col" class="menu" id="about">
                                     <span id="about">
                                         <span class="link" id="about">About</span>
@@ -105,7 +135,7 @@
                                     <span id="contact">
                                         <span class="link" id="contact">Contact</span>
                                         <br />
-                                        <img src="./images/icons/at-solid.svg" class="icon" sizes="height: 60px" srcset="">
+                                        <img src="./images/icons/at-solid.svg" class="icon" sizes="" srcset="">
                                     </span>
                                 </button>
                             </div>

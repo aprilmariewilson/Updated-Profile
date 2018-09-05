@@ -1,11 +1,12 @@
 p {
     color: gainsboro;
-    font-family: 'Merienda', cursive;
+    font-family: 'Poppins';
+    font-size: 1.2em;
 }
 #badge{
     
 height: 60px;
-margin-left: 2%;
+margin-left: 75%;
 }
 h5{
     color: rgba(9, 192, 52);
@@ -27,5 +28,11 @@ background-image: -moz-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(9,
 }
 .work{
     margin-top: 3%;
-
+}
+.personal, school-title, .work {
+    margin: 2%;
+    
+}
+p {
+    line-height: 2.6rem;
 }

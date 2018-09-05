@@ -71,12 +71,6 @@ body a:hover {
   opacity: 1;
   transform: scale(1.04);
 }
-#loading_msg{
-  position:fixed;
-  top:48%;
-  width:100%;
-  z-index:-1;
-}
 
 
 @media (max-width: 860px) {

@@ -6,7 +6,7 @@ dotenv.load({ path: '.env' });
 
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
-	port: process.env.DB_PORT,
+	port: 465,
 	secure: true,
 	tls: {
 		ciphers: 'SSLv3',

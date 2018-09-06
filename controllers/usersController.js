@@ -3,7 +3,9 @@ dotenv.config();
 require("json-stringify");
 const db = require('./../models');
 const nodemailer = require('nodemailer');
-
+const fromEmail = process.env.DB_USER || process.env.DB_USER;
+const password = process.env.DB_PASSWORD || process.env.DB_PASSWORD;
+const toEmail = process.env.DB_EMAIL || process.env.DB_EMAIL
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
 	port: 465,
@@ -13,8 +15,8 @@ const transporter = nodemailer.createTransport({
 		rejectUnauthorized: false
 	},
 	auth: {
-		user: process.env.DB_USER,
-		pass: process.env.DB_PASSWORD
+		user: fromEmail,
+		pass: password
 	}
 });
 
@@ -36,8 +38,8 @@ module.exports = {
 	create: function (req, res) {
 		
 		const mailOptions = {
-			from: process.env.DB_USER,
-			to: process.env.DB_EMAIL,
+			from: fromEmail,
+			to: toEmail,
 			subject: 'Portfolio hit ',
 			text: 'Someone is contacting you through your portfolio! Name:' + req.body.name + 
 			' Email: ' + req.body.email + ' Number: ' + req.body.phoneNumber + ' ' + req.body.message

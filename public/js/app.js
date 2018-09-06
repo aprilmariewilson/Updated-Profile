@@ -1,12 +1,11 @@
 
-var container = $("#mnsry_container"),
-    filterButton = $(".button"),
-    loadingMessage = $("#loading_msg");
-aside = $(".aside");
-params = {
-    itemSelector: ".item",
-    filtersGroupSelector: ".filters"
-};
+// var container = $("#mnsry_container"),
+//     filterButton = $(".button"),
+var aside = $(".aside");
+// params = {
+//     itemSelector: ".item",
+//     filtersGroupSelector: ".filters"
+// };
 PerfectScrollbar = ('perfect-scrollbar');
 
 function showDiv() {
@@ -39,7 +38,7 @@ $("document").ready(function () {
     // scroll bar
     var width = $(window).width();	
 
-    if(width > 1024) {
+    if(width > 300) {
         $('.card-inner .card-wrap').slimScroll({
             height: '625px', 
             color: 'rgb(94, 246, 130)',
@@ -52,20 +51,7 @@ $("document").ready(function () {
             disableFadeOut: false     
         });
     };
-    if((width < 1024) & $('#home-card').length) { 
-		$(window).on('scroll', function(){
-			var scrollPos = $(window).scrollTop();
-			$('.top-menu ul li a').each(function () {
-				var currLink = $(this);
-				var refElement = $(currLink.attr("href"));
-				if (refElement.offset().top - 76 <= scrollPos) {
-					$('.top-menu ul li').removeClass("active");
-					currLink.closest('li').addClass("active");
-				}
-			});
-		});
-    }
-   
+
     // contact page js
 
     $("#submit").on("click", function (event) {
@@ -88,22 +74,22 @@ $("document").ready(function () {
 
     });
 
-    // works page animation
+    // // works page animation
 
-    container.multipleFilterMasonry(params);
-    // Show articles with fadein                                                                                                                                                                                                                                                                                                                                                                                                            vj
-    container.find("article").animate(
-        {
-            opacity: 1
-        },
-        1200
-    );
-    // Change the filtering button(label) status
-    filterButton.find("input").change(function () {
+    // container.multipleFilterMasonry(params);
+    // // Show articles with fadein                                                                                                                                                                                                                                                                                                                                                                                                            vj
+    // container.find("article").animate(
+    //     {
+    //         opacity: 1
+    //     },
+    //     1200
+    // );
+    // // Change the filtering button(label) status
+    // filterButton.find("input").change(function () {
 
-        $(this)
-            .parent()
-            .toggleClass("active");
-    });
+    //     $(this)
+    //         .parent()
+    //         .toggleClass("active");
+    // });
 
 }); //page load

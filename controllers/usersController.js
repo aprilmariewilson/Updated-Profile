@@ -1,8 +1,8 @@
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+dotenv.config();
 require("json-stringify");
 const db = require('./../models');
 const nodemailer = require('nodemailer');
-dotenv.load({ path: '.env' });
 
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',

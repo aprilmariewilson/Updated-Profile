@@ -14,22 +14,22 @@ function showDiv() {
 
         case "about":
             aside.empty();
-            aside.load("http://localhost:8000/about");
+            aside.load("/about");
             break;
 
         case "resume":
             aside.empty();
-            aside.load("http://localhost:8000/resume");
+            aside.load("/resume");
             break;
 
         case "works":
             aside.empty();
-            aside.load("http://localhost:8000/works");
+            aside.load("/works");
             break;
 
         case "contact":
             aside.empty();
-            aside.load("http://localhost:8000/contact");
+            aside.load("/contact");
     }
 };
 

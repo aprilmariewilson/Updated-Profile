@@ -1,5 +1,5 @@
 p {
-    color: gainsboro;
+    color: rgba(151, 228, 202);
     font-family: 'Poppins';
     font-size: 1.2em;
 }
@@ -9,22 +9,19 @@ height: 60px;
 margin-left: 75%;
 }
 h5{
-    color: rgba(9, 192, 52);
+    color: #D1CB7A;
     margin-top: 0;
     margin-bottom: 0;
 
 }
 h3{
-    color: #626262;
+    color: #332519;
     margin-left: 3%;
 
 }
 .about-title{
 padding: 2%;
 margin-bottom: 2%;
-background-image: -moz-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(9, 192, 52, 0.4) 100%);
- background-image: -webkit-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
- background-image: linear-gradient(135deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%); 	
 }
 .work{
     margin-top: 3%;

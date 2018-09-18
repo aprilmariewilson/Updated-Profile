@@ -47,21 +47,21 @@
 
 .resume-title .name,
 .skill-title .name {
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(51, 37, 25, 0.85);
 }
 .info-list ul li {
 	display: inline-block;
 	width: 48%;
     line-height: 1.6;
     padding: 0;
-    color:gainsboro;    
+    color:rgba(151, 228, 202);    
 }
 .resume-items .resume-item .name {
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(51, 37, 25, 0.85);
 }
 
 .skills-list ul li .name {
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(51, 37, 25, 0.85);
 }
 
 .skills-list ul li .progress {
@@ -86,9 +86,6 @@
 	top: 0;
 	width: 30px;
 	height: 30px;
-	background: -moz-linear-gradient(-45deg, rgba(9, 192, 52), 0.4, 0%, rgba(9, 192, 52), 0.01 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(9, 192, 52), 0.4, 0%, rgba(9, 192, 52), 0.01 100%);
-	background: linear-gradient(135deg, rgba(9, 192, 52), 0.4, 0%, rgba(9, 192, 52), 0.01 100%);
 	z-index: -1;
 	border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -102,9 +99,9 @@
 	bottom: -15px;
 	width: 95%;
 	height: 1px;
-	background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
-	background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
-	background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(51, 37, 25, 0) 70%);
+	background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(51, 37, 25, 0) 70%);
+	background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(51, 37, 25, 0) 70%);
 }
 
 .resume-title .icon,
@@ -115,18 +112,8 @@
 	width: 40px;
 	height: 40px;
 	font-size: 32px;
-	color: rgba(9, 192, 52);;
+	color: #D1CB7A;
 	background: #ffffff;
-}
-
-.resume-title .icon .ion,
-.skill-title .icon .ion,
-.resume-title .icon .fab,
-.skill-title .icon .fab,
-.resume-title .icon .fas,
-.skill-title .icon .fas {
-	display: block;
-	line-height: 40px;
 }
 
 .resume-title .name,
@@ -134,22 +121,25 @@
 	margin: 0 0 0 40px;
 	font-size: 13px;
 	line-height: 13px;
-	color: gainsboro;
+	color: rgba(151, 228, 202);
 	font-weight: 500;
 	text-transform: uppercase;
 }
+#icon{
+	height: 20px;
+	margin-left: 5px;
+}
 #icon-resume{
 	height: 20px;
-
+	margin-bottom: 15px;
+	margin-left: 5px;
 }
 .res-icon{
 	transform: rotate(-6deg);
 	-webkit-transform: rotate(-6deg);
 	-moz-transform: rotate(-6deg);
 	-o-transform: rotate(-6deg);
-	background: -moz-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
-	background: linear-gradient(135deg, rgba(9, 192, 52, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+
 }
 /* 5.1 Resume */
 .resume-items .resume-item {
@@ -162,11 +152,11 @@
 }
 
 .resume-items .resume-item.active .date {
-	color: rgba(9, 192, 52);;
+	color: #D1CB7A;
 }
 
 .resume-items .resume-item.active .date:before {
-	background: rgba(9, 192, 52);;
+	background: #D1CB7A;
 }
 
 .resume-items .resume-item .date {
@@ -200,27 +190,27 @@
 }
 .name{
 padding-left: 10px;
-	color:rgba(9, 192, 52);;
+	color:#D1CB7A;
 }
  .company{
 	padding-left: 20px;
-	color:#626262;
+	color:#332519;
 }
 .date{
 	padding-left: 20px;
-	color: #626262;
+	color: #332519;
 }
 h2{
-	color:rgba(9, 192, 52);;	
+	color:#D1CB7A;	
 }
 p{
 	padding-left: 20px;
-	color: gainsboro;
+	color: rgba(151, 228, 202);
 }
 .resume-items .resume-item .name {
 	margin: 0;
 	font-size: 13px;
-	color: gainsboro;
+	color: rgba(151, 228, 202);
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -228,7 +218,7 @@ p{
 .resume-items .resume-item .company {
 	margin: 10px 0 10px 0;
 	font-size: 11px;
-	color: #999999;
+	color: rgba(151, 228, 202);
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -236,7 +226,7 @@ p{
 .resume-items .resume-item p {
 	margin: 0;
 	padding-left: 10px;
-	color: gainsboro;
+	color: rgba(151, 228, 202);
 }
 
 
@@ -256,7 +246,7 @@ p{
 	margin: 0 0 8px 0;
 	font-size: 14px;
 	line-height: 14px;
-	color: #626262;
+
 }
 
 .skills-list ul li .progress {
@@ -273,7 +263,7 @@ p{
 	top: 0;
 	width: 0%;
 	height: 100%;
-	background: rgba(9, 192, 52);;
+	background: #D1CB7A;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;

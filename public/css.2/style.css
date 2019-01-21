@@ -1,13 +1,13 @@
 
 body {
-    background-image:url('./../images/wooden-texture-rustic-wood-background-260nw-320657402.jpg');
+    background-image:url('./../images/wooden-texture.jpg');
     background-size:100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
     height:100%;
 	width:100%;
 }
-.left {
+/* .left {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
@@ -22,11 +22,11 @@ body {
 	transform: scaleX(1);
 	filter: FlipH;
 	-ms-filter: "FlipH";
-}
-#bee {
+} */
+/* #bee {
 	transition: transform .1s;
 	z-index: 15;
-}
+} */
 .background{
 	margin: 3%;
 }
@@ -66,7 +66,7 @@ body {
 	-khtml-border-radius: 0 0 4px 0;
 }
 .slimScrollBar {
-	height: 50px;
+	height: 100px;
 }
 .slimScrollBar, .slimScrollRail{
 	margin-top: 5%;

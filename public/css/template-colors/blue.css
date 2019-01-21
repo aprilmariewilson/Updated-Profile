@@ -1,0 +1,146 @@
+/* loaders and circle css */
+.background {
+	color: rgba(51, 37, 25, 0.85)
+}
+
+.preloader .spinner .double-bounce1,
+.preloader .spinner .double-bounce2 {
+	background: rgb(18, 223, 155);
+}
+
+.lnk:hover,
+.button:hover {
+	color: #D1CB7A;
+}
+
+.lnk:hover .ion,
+.button:hover .ion {
+	color: #D1CB7A;
+}
+
+.lnk:hover .arrow:before,
+.button:hover .arrow:before,
+.lnk:hover .arrow:after,
+.button:hover .arrow:after {
+	background: #D1CB7A;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+	border-bottom: 1px solid rgb(18, 223, 155);
+}
+
+button:hover {
+	border-bottom: 1px solid rgb(18, 223, 155);
+}
+
+.header .top-menu ul li:hover a,
+.header .top-menu ul li.active a {
+	color: rgb(18, 223, 155);
+}
+
+.header .top-menu ul li:hover a .icon,
+.header .top-menu ul li.active a .icon,
+.header .top-menu ul li:hover a .link,
+.header .top-menu ul li.active a .link {
+	color: rgb(18, 223, 155);
+}
+
+.card-started:after {
+	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+}
+
+.card-started .profile .image:before {
+	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+}
+
+.card-started .profile .subtitle {
+	color: #D1CB7A;
+}
+
+.card-started .profile .social a:hover .ion,
+.card-started .profile .social a:hover .fab,
+.card-started .profile .social a:hover .fas {
+	color: rgb(18, 223, 155);
+}
+
+.content .title:before {
+	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+}
+
+.service-items .service-item .icon {
+	color: rgb(18, 223, 155);
+	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+}
+
+.pricing-items .pricing-item .icon {
+	color: rgb(18, 223, 155);
+}
+
+.pricing-items .pricing-item .feature-list ul li strong {
+	background: rgb(18, 223, 155);
+}
+
+.fuct-items .fuct-item .icon {
+	color: rgb(18, 223, 155);
+}
+
+.resume-title .icon,
+.skill-title .icon {
+	color: rgba(51, 37, 25, 0.85);
+}
+
+.resume-items .resume-item.active .date {
+	color: rgb(18, 223, 155);
+}
+
+.resume-items .resume-item.active .date:before {
+	background: rgb(18, 223, 155);
+}
+
+.skills-list ul li .progress .percentage {
+	background: #D1CB7A;
+}
+
+.content.works .filter-menu .f_btn.active {
+	color: rgb(18, 223, 155);
+}
+
+.box-item .image .info:before {
+	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+}
+
+.post-box .blog-content blockquote {
+	border-left: 2px solid rgb(18, 223, 155);
+}
+
+.post-box .blog-content ul.list-style li:before {
+	background: rgb(18, 223, 155);
+}
+
+.post-box .post-comments li .comment-info .name h6 {
+	color: rgb(18, 223, 155);
+}
+
+.background.gradient {
+	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
+}
+ 
+#emailHelp {
+	color: rgb(18, 223, 155);
+	font-size: 10px;
+	
+}

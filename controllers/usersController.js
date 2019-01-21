@@ -5,7 +5,7 @@ const db = require('./../models');
 const nodemailer = require('nodemailer');
 const fromEmail = process.env.DB_USER || process.env.DB_USER;
 const password = process.env.DB_PASSWORD || process.env.DB_PASSWORD;
-const toEmail = process.env.DB_EMAIL || process.env.DB_EMAIL
+const toEmail = process.env.DB_EMAIL || process.env.DB_EMAIL;
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
 	port: 465,
@@ -47,9 +47,9 @@ module.exports = {
 		db.User
 			.create(req.body)
 			.then((dbModel, err) => {
-				err ? console.log("dammit") : console.log("????");
-				console.log("Response from the create", dbModel)
-				res.json(dbModel)
+				err ? console.log("try again") : 
+				console.log("Response from the create", dbModel);
+				res.json(dbModel);
 			})
 			.then(transporter.sendMail(mailOptions, function (error, info) {
 				if (error) {

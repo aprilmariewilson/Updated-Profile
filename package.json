@@ -6,12 +6,15 @@
   "scripts": {
     "serve": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets es2015 -d lib/ src",
     "seed": "node scripts/seedDb.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "concurrently": "^3.5.0",
     "nodemon": "^1.18.3"
   },

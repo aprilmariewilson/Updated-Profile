@@ -5,7 +5,7 @@
 
 .preloader .spinner .double-bounce1,
 .preloader .spinner .double-bounce2 {
-	background: rgb(18, 223, 155);
+	background: rgba(123, 235, 198, 0.85);
 }
 
 .lnk:hover,
@@ -28,23 +28,23 @@
 input:focus,
 textarea:focus,
 button:focus {
-	border-bottom: 1px solid rgb(18, 223, 155);
+	border-bottom: 1px solid rgba(123, 235, 198, 0.85);
 }
 
 button:hover {
-	border-bottom: 1px solid rgb(18, 223, 155);
+	border-bottom: 1px solid rgba(123, 235, 198, 0.85);
 }
 
 .header .top-menu ul li:hover a,
 .header .top-menu ul li.active a {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .header .top-menu ul li:hover a .icon,
 .header .top-menu ul li.active a .icon,
 .header .top-menu ul li:hover a .link,
 .header .top-menu ul li.active a .link {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .card-started:after {
@@ -66,7 +66,7 @@ button:hover {
 .card-started .profile .social a:hover .ion,
 .card-started .profile .social a:hover .fab,
 .card-started .profile .social a:hover .fas {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .content .title:before {
@@ -76,22 +76,22 @@ button:hover {
 }
 
 .service-items .service-item .icon {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 	background: -moz-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.4) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
 	background: linear-gradient(135deg, rgba(151, 228, 202, 0.4) 0%, rgba(151, 228, 202, 0.01) 100%);
 }
 
 .pricing-items .pricing-item .icon {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .pricing-items .pricing-item .feature-list ul li strong {
-	background: rgb(18, 223, 155);
+	background: rgba(123, 235, 198, 0.85);
 }
 
 .fuct-items .fuct-item .icon {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .resume-title .icon,
@@ -100,11 +100,11 @@ button:hover {
 }
 
 .resume-items .resume-item.active .date {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .resume-items .resume-item.active .date:before {
-	background: rgb(18, 223, 155);
+	background: rgba(123, 235, 198, 0.85);
 }
 
 .skills-list ul li .progress .percentage {
@@ -112,7 +112,7 @@ button:hover {
 }
 
 .content.works .filter-menu .f_btn.active {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .box-item .image .info:before {
@@ -122,15 +122,15 @@ button:hover {
 }
 
 .post-box .blog-content blockquote {
-	border-left: 2px solid rgb(18, 223, 155);
+	border-left: 2px solid rgba(123, 235, 198, 0.85);
 }
 
 .post-box .blog-content ul.list-style li:before {
-	background: rgb(18, 223, 155);
+	background: rgba(123, 235, 198, 0.85);
 }
 
 .post-box .post-comments li .comment-info .name h6 {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .background.gradient {
@@ -140,7 +140,7 @@ button:hover {
 }
  
 #emailHelp {
-	color: rgb(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 	font-size: 14px;
 	
 }

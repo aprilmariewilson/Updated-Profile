@@ -59,7 +59,7 @@ body {
 	2. Container
 */
 .container {
-	margin: -300px 0 0 -240px;
+	margin: -300px 0 0 -390px;
 	position: absolute;
 	top: 30%;
 	left: 50%;
@@ -76,10 +76,10 @@ body {
 }
 
 .container.opened {
-	transform: translateX(-240px);
-	-webkit-transform: translateX(-240px);
-	-moz-transform: translateX(-240px);
-	-o-transform: translateX(-240px);
+	transform: translateX(-390px);
+	-webkit-transform: translateX(-390px);
+	-moz-transform: translateX(-390px);
+	-o-transform: translateX(-390px);
 }
 
 @media (max-width: 1072px) {

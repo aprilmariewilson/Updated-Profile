@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-dotenv.config()
+dotenv.config({silent: true});
 
 
 // Define middleware here

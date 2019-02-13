@@ -69,7 +69,7 @@ td {
 input,
 textarea,
 button {
-	background-image: url(./../images/greige-background.jpg);
+	background-image: url(../../images/background/greige-background.jpg);
     border: none;
 	border-bottom: 1px solid #626262;
 	box-shadow: rgba(0, 0, 0, 0.05);
@@ -115,7 +115,7 @@ textarea:focus:-ms-input-placeholder {
 
 .header .top-menu ul li a {
 	color: rgba(51, 37, 25, 0.85);
-	background-image: url(./../../images/greige-background.jpg);
+	background-image: url(../../images/background/greige-background.jpg);
 }
 
 .header .top-menu ul li a:before {
@@ -146,21 +146,21 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .card-started:after {
-	background-image: url(./../../images/greige-background.jpg);
+	background-image: url(../../images/background/greige-background.jpg);
 	opacity: 0.3;
 }
 
 .card-started .profile {
-	background-image: url(./../../images/greige-background.jpg);;
+	background-image: url(../../images/background/greige-background.jpg);
 }
 
 .card-started .profile .slide:before,
 .card-started .profile .slide:after {
-	background-image: url(./../../images/greige-background.jpg);
+	background-image: url(../../images/background/greige-background.jpg);
 }
 
 .card-started .profile .image img {
-	background-image: url(./../../images/greige-background.jpg)
+	background-image: url(../../images/background/greige-background.jpg)
 }
 
 .card-started .profile .title {
@@ -174,12 +174,12 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .card-inner {
-	background-image: url(./../../images/greige-background.jpg);
+	background-image: url(../../images/background/greige-background.jpg);
 }
 
 .card-inner:before,
 .card-inner:after {
-	background-image: url(./../../images/greige-background.jpg)
+	background-image: url(../../images/background/greige-background.jpg)
 }
 
 .content .title {

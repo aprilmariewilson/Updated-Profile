@@ -102,8 +102,8 @@ $(function () {
 	
     if(width > 1024) {
         $('.card-inner .card-wrap').slimScroll({
-            height: '570px',
-            background: '#d1cb7a',
+			height: '920px',
+			size: '12px',
         });
     }
 	
@@ -157,10 +157,14 @@ $(function () {
 			disableOn: 700,
 			type: 'iframe',
 			removalDelay: 160,
-			preloader: false,
+			preloader: true,
 			fixedContentPos: false,
+			overflowY: scroll,
 			// disableOn: 0,
-			mainClass: 'popup-box'
+			mainClass: 'popup-box',
+			image: {
+				verticalFit: true
+			}
 		});
 	
 		/* popup music */

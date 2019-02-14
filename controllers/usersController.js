@@ -36,13 +36,13 @@ module.exports = {
 			.catch(err => res.status(422).json(err));
 	},
 	create: function (req, res) {
-		
+		console.log("controller" + db.User);
 		const mailOptions = {
 			from: fromEmail,
 			to: toEmail,
 			subject: 'Portfolio hit ',
-			text: 'Someone is contacting you through your portfolio! Name:' + req.body.name + 
-			' Email: ' + req.body.email + ' Number: ' + req.body.phoneNumber + ' ' + req.body.message
+			text: 'Someone is contacting you through your portfolio! Name: ' + req.body.name + 
+			' Email: ' + req.body.email + ' Number: ' + req.body.phoneNumber + '  Message: ' + req.body.message
 		};
 		db.User
 			.create(req.body)

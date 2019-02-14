@@ -102,8 +102,8 @@ $(function () {
 	
     if(width > 1024) {
         $('.card-inner .card-wrap').slimScroll({
-			height: '920px',
-			size: '12px',
+			height: '570px',
+			background: '#d1cb7a',
         });
     }
 	
@@ -256,7 +256,7 @@ $(function () {
         };
         $.post("/api/users", userData)
             .then(function () {
-				console.log("you made it into the post function!");
+				console.log("you made it into the post function!" + userData);
 				$('#cform').fadeOut();
 				$('.alert-success').delay(1000).fadeIn();
                 $(".form-control").val('');

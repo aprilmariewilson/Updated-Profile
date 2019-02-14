@@ -17,9 +17,9 @@
 
 .header {
 	position: absolute;
-	left: -140px;
+	left: -80px;
 	top: 15px;
-	width: 120px;
+	width: 72px;
 	z-index: 100;
 	text-align: center;
 	opacity: 1;
@@ -72,7 +72,7 @@
 	position: relative;
 	overflow: hidden;
 	display: block;
-	height: 132px;
+	height: 72px;
 	color: #171717;
 	text-align: center;
 	background: #ffffff;
@@ -93,15 +93,15 @@
 .header .top-menu ul li a .icon {
 	margin: -27px 0 0 -20px;
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 50%;
+	left: 50%;
 	width: 72px;
 	height: 72px;
-	font-size: 60px;
+	font-size: 20px;
 	color: #171717;
-	line-height: 60px;
+	line-height: 40px;
 	border-radius: 30px;
-	text-shadow: 2px 2px 2px #171717;
+	text-shadow: 1px 1px 2px #171717;
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-khtml-border-radius: 30px;
@@ -117,8 +117,7 @@
 	top: 57%;
 	width: 100%;
 	display: block;
-	font-size: 20px;
-	line-height: 60px;
+	font-size: 11px;
 	font-weight: 500;
 	text-transform: uppercase;
 	transition: all 0.3s ease 0s;
@@ -255,8 +254,8 @@
 .card-started .profile {
 	padding: 210px 50px 50px 50px;
 	position: relative;
-	height: 150%;
-	width: 100%;
+	height: 100%;
+	width: 105%;
 	background: #ffffff;
 	text-align: center;
 	z-index: 10;
@@ -271,7 +270,7 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 500px;
+	height: 300px;
 	background-color: #626262;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -307,10 +306,10 @@
 }
 
 .card-started .profile .image {
-	margin: 70px 0 20px 0;
+	margin: 0px 0 20px 0;
 	position: relative;
 	display: inline-block;
-	width: 300px;
+	width: 140px;
 }
 
 .card-started .profile .image:before {
@@ -342,8 +341,8 @@
 }
 
 .card-started .profile .title {
-	margin: 10px 0 10px 0;
-	font-size: 45px;
+	margin: 0px 0 10px 0;
+	font-size: 40px;
 	text-shadow: 2px 2px 2px #171717;
 	color: #d1cb7a;
 	line-height: 40px;
@@ -352,9 +351,9 @@
 
 .card-started .profile .subtitle {
 	margin: 0 0 15px 0;
-	font-size: 30px;
+	font-size: 20px;
 	color: #626262;
-	line-height: 40px;
+	line-height: 20px;
 	font-weight: 400;
 	text-shadow: 1px 2px 2px #171717;
 }
@@ -366,7 +365,7 @@
 }
 
 .card-started .profile .social a .ion, .card-started .profile .social a .fab, .card-started .profile .social a .fas {
-	font-size: 35px;
+	font-size: 16px;
 	color: #171717;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
@@ -413,8 +412,8 @@
 	}
 
 	.card-started .profile .title {
-		font-size: 35px;
-		line-height: 40px;
+		font-size: 28px;
+		line-height: 28px;
 	}
 
 }
@@ -429,7 +428,7 @@
 	left: 106%;
 	top: 15px;
 	width: 120%;
-	height: 920px;
+	height: 620px;
 	background: #ffffff;
 	transform-origin: center left;
 	opacity: 0;
@@ -547,9 +546,9 @@
 	margin: 0 0 15px 0;
 	padding: 0 0 5px 0;
 	position: relative;
-	font-size: 35px;
+	font-size: 17px;
 	color: #171717;
-	line-height: 40px;
+	line-height: 21px;
 	font-weight: 500;
 }
 
@@ -599,7 +598,7 @@
 
 .info-list ul li strong {
 	display: inline-block;
-	font-size: 17px;
+	font-size: 13px;
 	color: #171717;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -630,7 +629,7 @@
 	width: 60px;
 	height: 60px;
 	text-align: center;
-	font-size: 50px;
+	font-size: 32px;
 	color: #626262
 }
 
@@ -641,7 +640,7 @@
 
 .fuct-items .fuct-item .name {
 	margin: 0;
-	font-size: 18px;
+	font-size: 13px;
 	color: #171717;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -677,9 +676,9 @@
 	position: relative;
 	top: -15px;
 	float: left;
-	width: 45px;
+	width: 40px;
 	height: 40px;
-	font-size: 45px;
+	font-size: 32px;
 	color: #626262;
 	background: #ffffff;
 }
@@ -697,10 +696,10 @@
 .resume-title .name,
 .skill-title .name {
 	margin: 0 0 0 40px;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 13px;
+	line-height: 13px;
 	color: #171717;
-	text-shadow: 2px 2px 2px #171717;
+	text-shadow: 1px 1px 2px #171717;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -728,7 +727,7 @@
 	padding: 0;
 	position: relative;
 	display: inline-block;
-	font-size: 15px;
+	font-size: 11px;
 	line-height: 18px;
 	color: #d8dbe2;
 	font-weight: 500;
@@ -755,7 +754,7 @@
 
 .resume-items .resume-item .name {
 	margin: 0;
-	font-size: 17px;
+	font-size: 13px;
 	color: #171717;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -763,7 +762,7 @@
 
 .resume-items .resume-item .company {
 	margin: 0 0 10px 0;
-	font-size: 13px;
+	font-size: 11px;
 	color: #999999;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -791,8 +790,8 @@
 
 .skills-list ul li .name {
 	margin: 0 0 8px 0;
-	font-size: 21px;
-	line-height: 21px;
+	font-size: 14px;
+	line-height: 14px;
 	color: #626262;
 }
 
@@ -800,7 +799,7 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 6px;
+	height: 4px;
 	background: #d8dbe2;
 }
 
@@ -824,7 +823,7 @@
 	position: absolute;
 	top: -9px;
 	bottom: 15px;
-	right: 30px;
+	right: 0px;
 }
 
 .content.works .filter-menu .f_btn {
@@ -959,7 +958,7 @@
 .box-item .desc .name {
 	padding: 0 0 2px 0;
 	display: block;
-	font-size: 20px;
+	font-size: 13px;
 	color: #171717;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -967,7 +966,7 @@
 
 .box-item .desc .category {
 	margin: 0;
-	font-size: 18px;
+	font-size: 11px;
 	color:rgba(51,37,25,0.85);
 	font-weight: 300;
 	text-transform: uppercase;
@@ -1005,8 +1004,8 @@
 	6. Contacts
 */
 .content.contacts .map {
-	margin: 0px 0 20px 20%;
-	height: 500px;
+	margin: 10px 0 20px 20%;
+	height: 250px;
 }
 
 .alert-success {

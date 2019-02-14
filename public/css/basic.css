@@ -1,7 +1,3 @@
-/*
-*	 Author: beshleyua
-*	 Author URL: http://themeforest.net/user/beshleyua
-*/
 
 /* TABLE OF CONTENTS
 	1. Base
@@ -61,10 +57,10 @@ body {
 .container {
 	margin: -300px 0 0 -390px;
 	position: absolute;
-	top: 30%;
-	left: 50%;
-	width: 680px;
-	height: 800px;
+	top: 50%;
+	left: 65%;
+	width: 480px;
+	height: 600px;
 	transform: translateX(0px);
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
@@ -158,7 +154,7 @@ body {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	font-size: 22px;
+	font-size: 14px;
 }
 
 .row .col .col {
@@ -427,11 +423,11 @@ h5 {
 }
 
 h6 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 p {
-	font-size: 22px;
+	font-size: 14px;
 	line-height: 1.6;
 	padding: 0;
 	margin: 0 0 20px 0;
@@ -470,7 +466,7 @@ strong {
 	width: 50%;
 	height: 70px;
 	line-height: 70px;
-	font-size: 20px;
+	font-size: 12px;
 	color: #171717;
 	text-shadow: 1px 1px 2px #171717;
 	font-weight: 500;
@@ -612,7 +608,7 @@ ol ul {
 }
 
 li {
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 /* code */
@@ -664,7 +660,7 @@ button {
 	padding: 0;
 	display: block;
 	font-family: 'Poppins';
-	font-size: 18px;
+	font-size: 13px;
 	width: 100%;
 	height: 60px;
 	color: #171717;
@@ -717,7 +713,7 @@ legend {
 	display: block;
 	padding-bottom: 10px;
 	font-family: 'Poppins';
-	font-size: 22px;
+	font-size: 14px;
 
 }
 

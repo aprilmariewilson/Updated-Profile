@@ -815,7 +815,16 @@
 	-webkit-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 }
-
+/* 
+5.3 language
+*/
+.fuct-items .fuct-item .lang {
+	margin: 1px;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	line-height: 60px;
+}
 /*
 	6. Works
 */

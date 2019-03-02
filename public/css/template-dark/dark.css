@@ -251,7 +251,7 @@ textarea:focus:-ms-input-placeholder {
 
 .resume-title .name,
 .skill-title .name {
-	color: rgba(18, 223, 155);
+	color: rgba(123, 235, 198, 0.85);
 }
 
 .resume-items .resume-item .name {

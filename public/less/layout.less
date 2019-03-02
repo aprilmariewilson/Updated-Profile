@@ -1123,3 +1123,28 @@
     -webkit-animation: none;
     animation: none;
 }
+
+/*
+	8.Skills Image animation
+*/
+
+.fuct-items .fuct-item .lang :hover{
+	animation: shake 1s 3;
+}
+
+@keyframes shake {
+	from {
+		-moz-transform: rotate(-28deg);
+		-webkit-transform: rotate(-28deg);
+		-o-transform: rotate(-28deg);
+		-ms-transform: rotate(-28deg);
+		transform: rotate(-28deg);
+	}
+	to {
+		-moz-transform: rotate(28deg);
+		-webkit-transform: rotate(28deg);
+		-o-transform: rotate(28deg);
+		-ms-transform: rotate(28deg);
+		transform: rotate(28deg);
+	}
+}

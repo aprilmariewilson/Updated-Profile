@@ -822,9 +822,61 @@
 	margin: 1px;
 	position: relative;
 	display: inline-block;
-	width: 60px;
+	width: 95px;
+	height: 95px;
 	line-height: 60px;
+	border: 7px double #332519;
 }
+
+.fuct-items .fuct-item .lang1 :hover{
+	animation: flip 1s infinite;
+}
+
+.fuct-items .fuct-item .lang2 :hover{
+	animation: jello 1s infinite;
+}
+
+.fuct-items .fuct-item .lang3 :hover{
+	animation: rubberBand 1s infinite;
+}
+
+.fuct-items .fuct-item .lang4 :hover{
+	animation: shake 1s infinite;
+}
+
+.fuct-items .fuct-item .lang5 :hover{
+	animation: swing 1s infinite;
+}
+
+.fuct-items .fuct-item .lang6 :hover{
+	animation: tada 1s infinite;
+}
+
+.fuct-items .fuct-item .lang7 :hover{
+	animation: wobble 1s infinite;
+}
+
+
+#typed {
+	width: 100%;
+	height: 120px;
+	
+}
+
+.language-list {
+	line-height: 50px;
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+	font-size: 40px;
+	color: #3e4148;
+	position: absolute;
+	top: 55px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
 /*
 	6. Works
 */

@@ -120,30 +120,25 @@ $(function () {
 	/*
 		word animation
 	*/
-	const wordArray = ['React', 'Redux', 'MongoDB', 'Mongoose', 'MySQL', 'Templates', 'Handlebars.js',
+	
+	var typed = new Typed('.language-list', {
+		strings: ['React', 'Redux', 'MongoDB', 'Mongoose', 'MySQL', 'Templates', 'Handlebars.js',
 		'Sequelize', 'Mocha', 'Chai', 'Jest', 'Enzyme', 'Node.js', 'ES6', 'Linux', 'Authentication',
 		'Express.js', 'GIT', 'Github', 'Heroku', 'Digital Ocean', 'API', 'JSON', 'AJAX',
 		'JavaScript', ' jQuery', 'Firebase', 'HTML5', 'CSS', 'SASS', 'LESS', 'Bootstrap', 'Materialize',
 		'Templates', 'Handlebars.js', 'Yarn'
-	];
-	var timer;
-	var word = 0
-
-	function frameLooper() {
-		
-		for (word = 0; word < wordArray.length; word++) {
-			console.log(word);
-			// var myString = word.split("");
-			// if (myString.length > 0) {
-				$('.typed > h1').html(wordArray[word].split(""));
-			// } else {
-			// 	clearTimeout(timer);
-			// 	word++;
-			}
-			timer = setTimeout(frameLooper, 3000);
-		};
-	// };
-	frameLooper();
+	],
+		typeSpeed: 70,
+		startDelay: 700,
+		smartBackspace: true,
+		backDelay: 700,
+		backSpeed: 70,
+		shuffle: true,
+		showCursor: false,
+		autoInsertCss: true,
+		loop: false,
+		loopCount: Infinity,
+	  });
 
 	/*
 		Initialize masonry items

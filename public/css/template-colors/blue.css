@@ -41,6 +41,11 @@ button:hover {
 }
 
 .header .top-menu ul li:hover a .icon,
+.header .top-menu ul li:hover a .link {
+	animation: pulse 1s infinite;
+}
+
+.header .top-menu ul li:hover a .icon,
 .header .top-menu ul li.active a .icon,
 .header .top-menu ul li:hover a .link,
 .header .top-menu ul li.active a .link {
@@ -67,6 +72,11 @@ button:hover {
 .card-started .profile .social a:hover .fab,
 .card-started .profile .social a:hover .fas {
 	color: rgba(123, 235, 198, 0.85);
+}
+
+.typed{
+	background: linear-gradient(135deg, rgb(209,203,122,0.65) 0%, rgba(123, 235, 198, 0.45) 100%);
+	border: 10px double #332519;
 }
 
 .content .title:before {

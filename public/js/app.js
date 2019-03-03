@@ -97,7 +97,7 @@ $(function () {
 
 
 	/*
-		slimScroll
+		slimScroll and scroll icons
 	*/
 
 	if (width > 1024) {
@@ -105,116 +105,75 @@ $(function () {
 			height: '570px',
 			background: '#d1cb7a',
 		});
+		// if (percentPosition < '85%') {
+		// 	console.log(percentPosition);
+		// 	$('.card-wrap').append(
+		// 		'\<div class= scroll-container>\
+		// 		 <div class="chevron"></div>\
+		// 		 <div class="chevron"></div>\
+		// 		 <div class="chevron"></div>\
+		// 		</div>'
+		// 	);
+		// };
 	}
 
+/*
+	Hire Button
+*/
 
-	/*
-		Hire Button
-	*/
-
-	$('.lnks').on('click', '.lnk.discover', function () {
-		$('.top-menu a[href="#contacts-card"]').trigger('click');
-	});
+$('.lnks').on('click', '.lnk.discover', function () {
+	$('.top-menu a[href="#contacts-card"]').trigger('click');
+});
 
 
-	/*
-		word animation
-	*/
-	
-	var typed = new Typed('.language-list', {
-		strings: ['React', 'Redux', 'MongoDB', 'Mongoose', 'MySQL', 'Templates', 'Handlebars.js',
+/*
+	word animation
+*/
+
+var typed = new Typed('.language-list', {
+	strings: ['React', 'Redux', 'MongoDB', 'Mongoose', 'MySQL', 'Templates', 'Handlebars.js',
 		'Sequelize', 'Mocha', 'Chai', 'Jest', 'Enzyme', 'Node.js', 'ES6', 'Linux', 'Authentication',
 		'Express.js', 'GIT', 'Github', 'Heroku', 'Digital Ocean', 'API', 'JSON', 'AJAX',
 		'JavaScript', ' jQuery', 'Firebase', 'HTML5', 'CSS', 'SASS', 'LESS', 'Bootstrap', 'Materialize',
 		'Templates', 'Handlebars.js', 'Yarn'
 	],
-		typeSpeed: 70,
-		startDelay: 700,
-		smartBackspace: true,
-		backDelay: 700,
-		backSpeed: 70,
-		shuffle: true,
-		showCursor: false,
-		autoInsertCss: true,
-		loop: false,
-		loopCount: Infinity,
-	  });
+	typeSpeed: 70,
+	startDelay: 700,
+	smartBackspace: true,
+	backDelay: 700,
+	backSpeed: 70,
+	shuffle: true,
+	showCursor: false,
+	autoInsertCss: true,
+	loop: false,
+	loopCount: Infinity,
+});
 
-	/*
-		Initialize masonry items
-	*/
+/*
+	Initialize masonry items
+*/
 
-	var $container = $('.grid-items');
+var $container = $('.grid-items');
 
-	$container.imagesLoaded(function () {
-		$container.multipleFilterMasonry({
-			itemSelector: '.grid-item',
-			filtersGroupSelector: '.filter-button-group',
-			percentPosition: true,
-			gutter: 0
-		});
+$container.imagesLoaded(function () {
+	$container.multipleFilterMasonry({
+		itemSelector: '.grid-item',
+		filtersGroupSelector: '.filter-button-group',
+		percentPosition: true,
+		gutter: 0
 	});
+});
 
 
-	/*
-		12. Initialize masonry filter
-	*/
+/*
+	12. Initialize masonry filter
+*/
 
-	$('.filter-button-group').on('change', 'input[type="radio"]', function () {
-		if ($(this).is(':checked')) {
-			$('.f_btn').removeClass('active');
-			$(this).closest('.f_btn').addClass('active');
-		}
-		/* popup image */
-		$('.has-popup-image').magnificPopup({
-			type: 'image',
-			closeOnContentClick: true,
-			mainClass: 'popup-box',
-			image: {
-				verticalFit: true
-			}
-		});
-
-		/* popup video */
-		$('.has-popup-video').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
-			removalDelay: 160,
-			preloader: true,
-			fixedContentPos: false,
-			overflowY: scroll,
-			// disableOn: 0,
-			mainClass: 'popup-box',
-			image: {
-				verticalFit: true
-			}
-		});
-
-		/* popup music */
-		$('.has-popup-music').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false,
-			// disableOn: 0,
-			mainClass: 'popup-box'
-		});
-
-		/* popup media */
-		$('.has-popup-media').magnificPopup({
-			type: 'inline',
-			overflowY: 'auto',
-			closeBtnInside: true,
-			mainClass: 'popup-box-inline'
-		});
-	});
-
-
-	/*
-		Popups
-	*/
-
+$('.filter-button-group').on('change', 'input[type="radio"]', function () {
+	if ($(this).is(':checked')) {
+		$('.f_btn').removeClass('active');
+		$(this).closest('.f_btn').addClass('active');
+	}
 	/* popup image */
 	$('.has-popup-image').magnificPopup({
 		type: 'image',
@@ -230,10 +189,14 @@ $(function () {
 		disableOn: 700,
 		type: 'iframe',
 		removalDelay: 160,
-		preloader: false,
+		preloader: true,
 		fixedContentPos: false,
+		overflowY: scroll,
 		// disableOn: 0,
-		mainClass: 'popup-box'
+		mainClass: 'popup-box',
+		image: {
+			verticalFit: true
+		}
 	});
 
 	/* popup music */
@@ -252,44 +215,90 @@ $(function () {
 		type: 'inline',
 		overflowY: 'auto',
 		closeBtnInside: true,
-		mainClass: 'popup-box-inline',
-		callbacks: {
-			open: function () {
-				$('.popup-box-inline .popup-box').slimScroll({
-					height: height + 'px'
-				});
-			}
-		}
+		mainClass: 'popup-box-inline'
 	});
+});
 
 
+/*
+	Popups
+*/
 
-	// validate contact form and send to database
+/* popup image */
+$('.has-popup-image').magnificPopup({
+	type: 'image',
+	closeOnContentClick: true,
+	mainClass: 'popup-box',
+	image: {
+		verticalFit: true
+	}
+});
 
+/* popup video */
+$('.has-popup-video').magnificPopup({
+	disableOn: 700,
+	type: 'iframe',
+	removalDelay: 160,
+	preloader: false,
+	fixedContentPos: false,
+	// disableOn: 0,
+	mainClass: 'popup-box'
+});
 
-	$(".submit").on("click", function (event) {
-		event.preventDefault();
+/* popup music */
+$('.has-popup-music').magnificPopup({
+	disableOn: 700,
+	type: 'iframe',
+	removalDelay: 160,
+	preloader: false,
+	fixedContentPos: false,
+	// disableOn: 0,
+	mainClass: 'popup-box'
+});
 
-		//create new user
-		var userData = {
-			"name": $("#exampleInputName").val().trim(),
-			"email": $("#exampleInputEmail").val().trim(),
-			"phoneNumber": $("#exampleInputPhoneNumber").val().trim(),
-			"message": $("#exampleTextarea").val().trim(),
-		};
-		$.post("/api/users", userData)
-			.then(function () {
-				console.log("you made it into the post function!" + userData);
-				$('#cform').fadeOut();
-				$('.alert-success').delay(1000).fadeIn();
-				$(".form-control").val('');
-				event.preventDefault();
-				jQuery.noConflict();
-
-
+/* popup media */
+$('.has-popup-media').magnificPopup({
+	type: 'inline',
+	overflowY: 'auto',
+	closeBtnInside: true,
+	mainClass: 'popup-box-inline',
+	callbacks: {
+		open: function () {
+			$('.popup-box-inline .popup-box').slimScroll({
+				height: height + 'px'
 			});
+		}
+	}
+});
 
-	});
+
+
+// validate contact form and send to database
+
+
+$(".submit").on("click", function (event) {
+	event.preventDefault();
+
+	//create new user
+	var userData = {
+		"name": $("#exampleInputName").val().trim(),
+		"email": $("#exampleInputEmail").val().trim(),
+		"phoneNumber": $("#exampleInputPhoneNumber").val().trim(),
+		"message": $("#exampleTextarea").val().trim(),
+	};
+	$.post("/api/users", userData)
+		.then(function () {
+			console.log("you made it into the post function!" + userData);
+			$('#cform').fadeOut();
+			$('.alert-success').delay(1000).fadeIn();
+			$(".form-control").val('');
+			event.preventDefault();
+			jQuery.noConflict();
+
+
+		});
+
+});
 
 
 });

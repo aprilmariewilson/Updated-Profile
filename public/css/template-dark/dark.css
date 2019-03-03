@@ -194,6 +194,7 @@ textarea:focus:-ms-input-placeholder {
 
 .info-list ul li strong {
 	color: #d1cb7a;
+	text-shadow: 1px 1px 1px #171717;
 }
 
 .service-items.border-line-v:after {
@@ -263,7 +264,10 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .skills-list ul li .progress {
-	background:rgba(255, 255, 255, 0.85);
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(223, 219, 219, 0.85);
 }
 
 .content.works .filter-menu .f_btn {

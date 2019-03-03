@@ -11,6 +11,7 @@
 .lnk:hover,
 .button:hover {
 	color: #D1CB7A;
+	animation: pulse 1s infinite;
 }
 
 .lnk:hover .ion,
@@ -72,11 +73,12 @@ button:hover {
 .card-started .profile .social a:hover .fab,
 .card-started .profile .social a:hover .fas {
 	color: rgba(123, 235, 198, 0.85);
+	animation: pulse 1s infinite;
 }
 
 .typed{
 	background: linear-gradient(135deg, rgb(209,203,122,0.65) 0%, rgba(123, 235, 198, 0.45) 100%);
-	border: 10px double #332519;
+	border: 10px double #3e4148;
 }
 
 .content .title:before {
@@ -118,8 +120,33 @@ button:hover {
 }
 
 .skills-list ul li .progress .percentage {
-	background: #D1CB7A;
-}
+	background-color:#3e4148; 
+	background-image: linear-gradient(
+	  -45deg, 
+	  rgba(123, 235, 198, .5) 25%, 
+	  transparent 25%, 
+	  transparent 50%, 
+	  rgba(123, 235, 198, .5) 50%, 
+	  rgba(123, 235, 198, .5) 75%, 
+	  transparent 75%, 
+	  transparent
+	);
+	z-index: 1;
+	background-size: 50px 50px;
+	animation: move 2s linear infinite;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	overflow: hidden;
+  }
+  .animate > span:after {
+	display: none;
+  }
+
+  .skills-list ul li:after, .animate > .percentage > span {
+	animation: move 2s linear infinite;
+  }
 
 .content.works .filter-menu .f_btn.active {
 	color: rgba(123, 235, 198, 0.85);

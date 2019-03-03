@@ -364,7 +364,6 @@
           // calculate actual scroll amount
           percentScroll = parseInt(bar.css('top')) / (me.outerHeight() - bar.outerHeight());
           delta = percentScroll * (me[0].scrollHeight - me.outerHeight());
-
           if (isJump)
           {
             delta = y;
@@ -372,7 +371,7 @@
             offsetTop = Math.min(Math.max(offsetTop, 0), maxTop);
             bar.css({ top: offsetTop + 'px' });
           }
-
+          
           // scroll content
           me.scrollTop(delta);
 
@@ -395,7 +394,8 @@
           }
           else
           {
-            document.attachEvent("onmousewheel", _onWheel)
+            document.attachEvent("onmousewheel", _onWheel);
+  
           }
         }
 

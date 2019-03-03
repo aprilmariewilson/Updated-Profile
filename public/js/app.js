@@ -97,7 +97,7 @@ $(function () {
 
 
 	/*
-		slimScroll and scroll icons
+		slimScroll 
 	*/
 
 	if (width > 1024) {
@@ -105,16 +105,6 @@ $(function () {
 			height: '570px',
 			background: '#d1cb7a',
 		});
-		// if (percentPosition < '85%') {
-		// 	console.log(percentPosition);
-		// 	$('.card-wrap').append(
-		// 		'\<div class= scroll-container>\
-		// 		 <div class="chevron"></div>\
-		// 		 <div class="chevron"></div>\
-		// 		 <div class="chevron"></div>\
-		// 		</div>'
-		// 	);
-		// };
 	}
 
 /*
@@ -137,16 +127,25 @@ var typed = new Typed('.language-list', {
 		'JavaScript', ' jQuery', 'Firebase', 'HTML5', 'CSS', 'SASS', 'LESS', 'Bootstrap', 'Materialize',
 		'Templates', 'Handlebars.js', 'Yarn'
 	],
+
+
+	stringsElement: null,
 	typeSpeed: 70,
-	startDelay: 700,
-	smartBackspace: true,
-	backDelay: 700,
+	startDelay: 0,
 	backSpeed: 70,
-	shuffle: true,
+	backDelay: 700,
+	loop: true,
+	loopCount: false,
 	showCursor: false,
+	cursorChar: "|",
+	attr: null,
+	shuffle: true,
+	contentType: 'html',
 	autoInsertCss: true,
-	loop: false,
-	loopCount: Infinity,
+	callback: function() {},
+	preStringTyped: function() {},
+	onStringTyped: function() {},
+	resetCallback: function() {}
 });
 
 /*
@@ -272,6 +271,19 @@ $('.has-popup-media').magnificPopup({
 });
 
 
+/*
+	Show Email
+*/
+
+
+    $('.hiddenMail').on('click',function(event)
+    {
+        event.preventDefault();
+        $(this).off("click");
+        var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+        $(this).removeClass("hiddenMail");
+		$(this).html(email);  
+    });
 
 // validate contact form and send to database
 

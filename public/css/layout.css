@@ -264,6 +264,13 @@
 	-webkit-border-radius: 4px;
 	-khtml-border-radius: 4px;
 }
+
+@media (max-width: 560px){
+	.card-started .profile {
+		width: 100%;
+	}
+}
+
 .card-started .profile .slide {
 	position: absolute;
 	overflow: hidden;
@@ -469,7 +476,6 @@
 	top: 0;
 	left: 0;
 	right: 20px;
-	height: 20px;
 	background: linear-gradient(135deg, rgb(209,203,122,0.65) 0%, rgba(123, 235, 198, 0.45) 100%);;
 	z-index: 10;
 }
@@ -1196,12 +1202,17 @@
 }
 
 .scroll-container {
-	margin-left: 52%;
+	margin-left: 47%;
 	width: 24px;
 	height: 24px;
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	bottom: 5%;
+  }
+  @media (max-width: 1024px){
+	.scroll-container {
+		visibility: hidden;
+	} 
   }
   
   .chevron {

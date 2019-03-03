@@ -334,3 +334,22 @@ textarea:focus:-ms-input-placeholder {
 	background-color: rgba(255, 255, 255, 0.02);
 }
 
+.hiddenMail {
+	color: #3e4148;
+	cursor: pointer;
+}
+
+.hiddenMail:hover {
+    text-decoration: none;
+	color: #3e4148;
+	cursor: pointer;
+}
+
+.mail {
+	color: #3e4148;
+}
+
+.mail:hover {
+    text-decoration: none;
+    color: #3e4148;
+}

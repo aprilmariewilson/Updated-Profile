@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes/index');
 const mongoose = require('mongoose');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 dotenv.config({silent: true});
 
@@ -25,5 +25,5 @@ db.once('open', function() {
 app.use('/', routes);
 
 app.listen(PORT, () => {
-	console.log(`🌎  ==> API Server now listening on PORT ${PORT} don't forget to change port to 80 before pushing to github!`);
+	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });

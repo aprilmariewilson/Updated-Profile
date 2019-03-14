@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "1.0.0",
   "description": "",
-  "engines":{
+  "engines": {
     "node": "8.11.3"
   },
   "main": "server.js",
@@ -10,7 +10,8 @@
     "serve": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel --presets es2015 -d lib/ src",
-    "seed": "node scripts/seedDb.js"
+    "seed": "node scripts/seedDb.js",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "keywords": [],
   "author": "April Wilson",
@@ -36,5 +37,6 @@
     "nodemailer": "^4.6.8",
     "path": "^0.12.7",
     "perfect-scrollbar": "^1.4.0"
-  }
+  },
+  "heroku-run-build-script": true
 }

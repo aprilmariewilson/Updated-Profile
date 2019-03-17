@@ -3,9 +3,9 @@ dotenv.config();
 require("json-stringify");
 const db = require('./../models');
 const nodemailer = require('nodemailer');
-const fromEmail = process.env.DB_USER || process.env.DB_USER;
-const password = process.env.DB_PASSWORD || process.env.DB_PASSWORD;
-const toEmail = process.env.DB_EMAIL || process.env.DB_EMAIL;
+const fromEmail = process.env.DB_USER || 'wilson.aprilmarie@gmail.com';
+const password = process.env.DB_PASSWORD || 'Amw489169';
+const toEmail = process.env.DB_EMAIL || 'aprilmariewilson@yahoo,com';
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
 	port: 465,

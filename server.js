@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes/index');
 const mongoose = require('mongoose');
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8000;
 
 dotenv.config({silent: true});
 
